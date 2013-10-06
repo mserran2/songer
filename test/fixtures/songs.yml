@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mnet_id: 1
+  title: MyString
+  artist_name: MyString
+  album_title: MyString
+  duration: MyString
+  album_150x150: MyString
+  album_800x800: MyString
+
+two:
+  mnet_id: 1
+  title: MyString
+  artist_name: MyString
+  album_title: MyString
+  duration: MyString
+  album_150x150: MyString
+  album_800x800: MyString

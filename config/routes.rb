@@ -1,5 +1,7 @@
 Songer::Application.routes.draw do
-  resources :playlists
+  resources :playlists do
+    resources :songs
+  end
 
 
   # The priority is based upon order of creation:

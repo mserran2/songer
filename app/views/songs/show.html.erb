@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mnet:</b>
+  <%= @song.mnet_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @song.title %>
+</p>
+
+<p>
+  <b>Artist name:</b>
+  <%= @song.artist_name %>
+</p>
+
+<p>
+  <b>Album title:</b>
+  <%= @song.album_title %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @song.duration %>
+</p>
+
+<p>
+  <b>Album 150x150:</b>
+  <%= @song.album_150x150 %>
+</p>
+
+<p>
+  <b>Album 800x800:</b>
+  <%= @song.album_800x800 %>
+</p>
+
+
+<%= link_to 'Edit', edit_playlist_song_path(@playlist,@song) %> |
+<%= link_to 'Back', playlist_songs_path(@playlist) %>

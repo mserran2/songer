@@ -1,0 +1,35 @@
+<h1>Listing songs</h1>
+
+<table>
+  <tr>
+    <th>Mnet</th>
+    <th>Title</th>
+    <th>Artist name</th>
+    <th>Album title</th>
+    <th>Duration</th>
+    <th>Album 150x150</th>
+    <th>Album 800x800</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @songs.each do |song| %>
+  <tr>
+    <td><%= song.mnet_id %></td>
+    <td><%= song.title %></td>
+    <td><%= song.artist_name %></td>
+    <td><%= song.album_title %></td>
+    <td><%= song.duration %></td>
+    <td><%= song.album_150x150 %></td>
+    <td><%= song.album_800x800 %></td>
+    <td><%= link_to 'Show', playlist_song_path(@playlist,song) %></td>
+    <td><%= link_to 'Edit', edit_playlist_song_path(@playlist,song) %></td>
+    <td><%= link_to 'Destroy', playlist_song_path(@playlist, song), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Song', new_playlist_song_path(@playlist) %>
