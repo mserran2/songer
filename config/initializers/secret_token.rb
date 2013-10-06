@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Songer::Application.config.secret_token = '21332ea8c1996849bdea5163884377865cef39e356ecd7405d30bfaf9add2283cad2070a1b33e545e8b7ee6845f819551ba3bc9fccc736d9072a6ae796b5489c'
+Songer::Application.config.secret_token = 'a65701200e345e83096a06ecef35f4932611c3a60f7bf52ad0bf1c34b04cef27e4aeabcc772d2547ae9388f02ff67865c068b584b92b41546ba5064e26c1b30f'
