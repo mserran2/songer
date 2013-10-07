@@ -1,5 +1,5 @@
 class Playlist < ActiveRecord::Base
   attr_accessible :name
 
-  has_many :songs
+  has_many :songs, :dependent => :destroy
 end
